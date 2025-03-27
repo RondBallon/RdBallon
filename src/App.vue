@@ -22,7 +22,7 @@
   class="md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
 
         <li class="menu-button"><a href="">Accueil</a></li>
-        <li class="menu-button"><a href="https://drive.google.com/uc?id=1bMyieKwIYgosCLam5pUo9iPKxPZkfwN8" target="_blank">CV</a></li>
+        <li class="menu-button"><a href="./CVNoPhoto.pdf" target="_blank">CV</a></li>
         <li class="menu-button"><a href="#work" v-smooth-scroll>Projets</a></li>
         <li class="menu-button"><a href="#about" v-smooth-scroll>A propos de moi</a></li>
         <li class="menu-button"><a href="#contact" v-smooth-scroll>Contact</a></li>
@@ -145,9 +145,9 @@
       </p>
 
       <button class="text-sky-800 font-bold text-2xl tracking-wider"
-  onclick='window.open("https://drive.google.com/uc?id=1bMyieKwIYgosCLam5pUo9iPKxPZkfwN8", "_blank")'>
-  CV
-</button>
+        onclick="window.open('./CVNoPhoto.pdf', '_blank')">
+        CV
+      </button>
     </div>
   </div>
 
