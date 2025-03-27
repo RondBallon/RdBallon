@@ -22,7 +22,7 @@
   class="md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
 
         <li class="menu-button"><a href="">Accueil</a></li>
-        <li class="menu-button"><a href=".\src\assets\CVCF.pdf" target="_blank">CV</a></li>
+        <li class="menu-button"><a href="src\assets\CVNoPhoto.pdf" target="_blank">CV</a></li>
         <li class="menu-button"><a href="#work" v-smooth-scroll>Projets</a></li>
         <li class="menu-button"><a href="#about" v-smooth-scroll>A propos de moi</a></li>
         <li class="menu-button"><a href="#contact" v-smooth-scroll>Contact</a></li>
@@ -145,7 +145,7 @@
       </p>
 
       <button class="text-sky-800 font-bold text-2xl tracking-wider"
-        onclick="window.open('src/assets/CVCF.pdf', '_blank')">
+        onclick="window.open('src/assets/CVNoPhoto.pdf', '_blank')">
         CV
       </button>
     </div>
@@ -213,12 +213,20 @@ export default {
     toggleMenu() {
       this.showMenu = !this.showMenu;
     },
+    
     // Méthode pour effectuer un défilement fluide jusqu'à la section Contact
     scrollToContact() {
       const contactSection = document.getElementById('contact');
       if (contactSection) {
         contactSection.scrollIntoView({ behavior: 'smooth' });
       }
+    },
+
+    // Méthode pour ouvrir le PDF dans un nouvel onglet
+    openPDF() {
+      // Utilisation de `require` pour accéder au fichier PDF dans `assets`
+      const pdfPath = require('@/assets/CVNoPhoto.pdf'); // Le fichier est dans `src/assets/`
+      window.open(pdfPath, '_blank'); // Ouvre le PDF dans un nouvel onglet
     }
   }
 };
