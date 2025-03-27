@@ -221,13 +221,6 @@ export default {
         contactSection.scrollIntoView({ behavior: 'smooth' });
       }
     },
-
-    // Méthode pour ouvrir le PDF dans un nouvel onglet
-    openPDF() {
-      // Utilisation de `require` pour accéder au fichier PDF dans `assets`
-      const pdfPath = require('@/public/CVNoPhoto.pdf'); // Le fichier est dans `src/assets/`
-      window.open(pdfPath, '_blank'); // Ouvre le PDF dans un nouvel onglet
-    }
   }
 };
 </script>
