@@ -79,7 +79,7 @@
         </a>
       </div>
       <div class="card-image bg-green-100">
-        <img class="object-cover w-full h-72 md:h-96" src="./assets/project1.png" />
+        <img class="object-cover w-full h-72 md:h-96" src="./assets/project1.jpg" />
       </div>
     </div>
 
@@ -100,7 +100,7 @@
         </a>
       </div>
       <div class="card-image">
-        <img class="object-cover w-full h-48 md:h-96" src="./assets/project2.png" />
+        <img class="object-cover w-full h-48 md:h-96" src="./assets/project2.jpg" />
       </div>
     </div>
 
@@ -121,7 +121,7 @@
         </a>
       </div>
       <div class="card-image bg-green-100">
-        <img class="object-cover w-full h-72 md:h-96" src="./assets/project1.png" />
+        <img class="object-cover w-full h-72 md:h-96" src="./assets/project1.jpg" />
       </div>
     </div>
   </div>
