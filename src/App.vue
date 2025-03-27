@@ -18,10 +18,10 @@
         </div>
       </div>
       <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-      <ul :class="showMenu ? 'flex' : 'hidden'"
-        class="flex-col items-end mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
+      <ul :class="{ 'absolute top-16 right-0 bg-white shadow-md p-4 flex flex-col space-y-4': showMenu, 'hidden': !showMenu }"
+  class="md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
 
-        <li class="menu-button"><a href="#">Accueil</a></li>
+        <li class="menu-button"><a href="">Accueil</a></li>
         <li class="menu-button"><a href="src\assets\CVNoPhoto.pdf" target="_blank">CV</a></li>
         <li class="menu-button"><a href="#work" v-smooth-scroll>Projets</a></li>
         <li class="menu-button"><a href="#about" v-smooth-scroll>A propos de moi</a></li>
@@ -156,7 +156,7 @@
       <h2 class="text-gray-700 text-3xl md:text-4xl font-Eczar mb-3 font-bold">
         Pour me contacter pour un projet ou une collaboration
       </h2>
-      <a href="mailto:clement.ferrandery@gmail.com" class=" text-xl text-black-600 font-work_sans">
+      <a href="mailto:clement.ferrandery@gmail.com" class=" text-l text-black-400 font-work_sans">
         📧 clement.ferrandery@gmail.com
       </a>
     </div>
@@ -203,7 +203,17 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      showMenu: false
+    };
+  },
   methods: {
+    // Méthode pour basculer l'affichage du menu mobile
+    toggleMenu() {
+      this.showMenu = !this.showMenu;
+    },
+    // Méthode pour effectuer un défilement fluide jusqu'à la section Contact
     scrollToContact() {
       const contactSection = document.getElementById('contact');
       if (contactSection) {
@@ -211,5 +221,5 @@ export default {
       }
     }
   }
-}
+};
 </script>

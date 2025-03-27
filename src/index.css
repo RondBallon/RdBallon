@@ -4,6 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img {
+  object-fit: cover; /* Ajuste l’image sans déformation */
+  max-width: 100%; /* Empêche les débordements */
+  height: auto;
+}
+
 .banner-1 {
   @apply px-5 pt-5 md:pt-10 3xl:px-36 2xl:px-36 xl:px-28 lg:px-24 md:px-16;
   background-color: #ffeed9;
