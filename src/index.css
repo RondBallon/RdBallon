@@ -5,43 +5,124 @@
 @tailwind utilities;
 
 .banner-1 {
-  @apply px-5  pt-5 md:pt-10 3xl:px-36 2xl:px-36 xl:px-28 lg:px-24 md:px-16;
+  @apply px-5 pt-5 md:pt-10 3xl:px-36 2xl:px-36 xl:px-28 lg:px-24 md:px-16;
   background-color: #ffeed9;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out; /* Ralentir la transition */
+}
+
+.banner-1:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Ombre encore plus marquée */
 }
 
 .banner-2 {
-  @apply px-5  pt-5 md:pt-10 3xl:px-36 2xl:px-36 xl:px-28 lg:px-24 md:px-16;
+  @apply px-5 pt-5 md:pt-10 3xl:px-36 2xl:px-36 xl:px-28 lg:px-24 md:px-16;
   background-color: #ffddbf;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out; /* Ralentir la transition */
 }
+
+.banner-2:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Ombre encore plus marquée */
+}
+
 .bg-yellowis {
   background-color: #ffddbf;
+  transition: background-color 0.3s ease-in-out;
 }
+
+.bg-yellowis:hover {
+  background-color: #ffcc99; /* Changer légèrement la couleur au survol */
+}
+
 .hello-button {
   background-color: #ffddbf;
-}
-.menu-button {
-  @apply 3xl:text-2xl 2xl:text-2xl xl:text-xl lg:text-xl md:text-xl  font-bold font-work_sans hover:text-black;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
   color: #594f43;
+  cursor: pointer;
+  /* Retirer l'animation pour ce bouton */
+  transition: none;
+}
+
+.menu-button {
+  @apply 3xl:text-2xl 2xl:text-2xl xl:text-xl lg:text-xl md:text-xl font-bold font-work_sans hover:text-black;
+  color: #594f43;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-button:hover {
+  color: #403930; /* Changer la couleur du texte au survol */
 }
 
 .submit-button {
-  @apply border-gray-800 border-gray-800 3xl:text-xl 2xl:text-xl lg:text-xl md:text-xl text-xs py-2 px-4  lg:py-4 lg:px-8 rounded-2xl font-work_sans font-semibold;
+  @apply border-gray-800 3xl:text-xl 2xl:text-xl lg:text-xl md:text-xl text-xs py-2 px-4 lg:py-4 lg:px-8 rounded-2xl font-work_sans font-semibold;
+  border: 2px solid #594f43;
+  background-color: #fff;
+  color: #594f43;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out; /* Ralentir la transition */
+}
+
+.submit-button:hover {
+  background-color: #ffddbf;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .heading3 {
   color: #403930;
   @apply md:text-5xl text-xl font-bold font-work_sans tracking-wide;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.heading3:hover {
+  color: #ffcc99; /* Changer la couleur du texte au survol */
 }
 
 .project-title {
   @apply text-gray-700 text-3xl md:text-4xl font-work_sans tracking-wide font-bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.project-title:hover {
+  color: #403930; /* Changer la couleur du texte au survol */
 }
 
 .card {
   @apply bg-white rounded-2xl md:flex place-items-center my-20 shadow-md;
+  transition: box-shadow 0.4s ease-in-out, transform 0.4s ease-in-out; /* Ralentir la transition */
 }
+
+.card:hover {
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); /* Ombre plus marquée au survol */
+  transform: scale(1.01); /* Réduire l'effet de scale (plus subtil) */
+}
+
 .card-image {
   @apply md:w-1/2 md:rounded-r-2xl md:rounded-l-none rounded-b-2xl flex;
+  transition: transform 0.4s ease-in-out; /* Ralentir la transition */
+}
+
+.card-image:hover {
+  transform: scale(1.01); /* Réduire l'effet de scale (plus subtil) */
+}
+
+/* Effet de scale uniquement pour les boutons "Mes Projets" et "Me Contacter" */
+.projects-button,
+.contact-button {
+  transition: transform 0.4s ease-in-out; /* Ralentir la transition */
+}
+
+.projects-button:hover,
+.contact-button:hover {
+  transform: scale(1.03); /* Réduire l'effet de scale (plus subtil) */
 }
 
 @layer utilities {
