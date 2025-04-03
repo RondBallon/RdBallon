@@ -124,6 +124,24 @@
         <img class="object-cover w-full h-72 md:h-96" src="./assets/project1.jpg" />
       </div>
     </div>
+
+    <div class="card">
+      <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
+        <h4 class="project-title">Boite à outils !</h4>
+        <p class="font-work_sans pr-12">
+          Ensemble de projets Javascript / HTML / CSS basiques mais qui me font travailler les bases et qui sont surtout modulaires et réutilisables. Je les ai
+          mis en ligne pour les partager et les rendre accessibles à tous. Vous pouvez les utiliser comme bon vous semble, mais je vous conseille de ne pas les utiliser pour vos projets professionnels !
+        </p>
+        <a href="https://github.com/RondBallon/Projet_Terre/tree/master" target="_blank">
+          <button class="text-sky-800 font-bold text-2xl tracking-wider">
+            Repo Github
+          </button>
+        </a>
+      </div>
+      <div class="card-image bg-green-100">
+        <img class="object-cover w-full h-72 md:h-96" src="./assets/project1.jpg" />
+      </div>
+    </div>
   </div>
 
 
