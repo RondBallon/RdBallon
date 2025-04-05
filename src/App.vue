@@ -69,8 +69,7 @@
         <p class="font-work_sans pr-12">
           Portfolio Terminal est un portfolio interactif inspiré d'un terminal Unix, créé avec Go et JavaScript. Il
           présente ma transition de menuisier/restaurateur vers le développement web à travers des commandes comme
-          whoiam, projets, et cv, ainsi que des Easter eggs comme matrix et 42. Hébergé sur GitHub Pages et MongoDB
-          Atlas, il offre une expérience unique et interactive qui reflète mon parcours et mes compétences.
+          whoiam, projets, et cv, ainsi que des Easter eggs comme matrix et 42. Il offre une expérience unique et interactive qui reflète mon parcours et mes compétences.
         </p>
         <a href="https://github.com/RondBallon/PortfolioTerminal-" target="_blank">
           <button class="text-sky-800 font-bold text-2xl tracking-wider">
@@ -132,7 +131,7 @@
           Ensemble de projets Javascript / HTML / CSS basiques mais qui me font travailler les bases et qui sont surtout modulaires et réutilisables. Je les ai
           mis en ligne pour les partager et les rendre accessibles à tous. Vous pouvez les utiliser comme bon vous semble, mais je vous conseille de ne pas les utiliser pour vos projets professionnels !
         </p>
-        <a href="https://github.com/RondBallon/Projet_Terre/tree/master" target="_blank">
+        <a href="https://github.com/RondBallon/Projets_Javascript_debutants" target="_blank">
           <button class="text-sky-800 font-bold text-2xl tracking-wider">
             Repo Github
           </button>
